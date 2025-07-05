@@ -1,4 +1,4 @@
-# [Shit Rimworld Says (Continued)]()
+# [Shit Rimworld Says (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3374039039)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -8,19 +8,19 @@ Update of Fluffys mod https://steamcommunity.com/sharedfiles/filedetails/?id=206
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
-adds quotes from /r/ShitRimWorldSays to RimWorld loading screens
+adds quotes from /r/Sh*tRimWorldSays to RimWorld loading screens
 
 ## Important
 
 
 If you're easily offended, please do not install this mod.
 
-[/r/ShitRimworldSays](https://reddit.com/r/ShitRimworldSays) is a collection of the funniest (and often most gruesome) Rimworld quotes, *taken out of context*. I have absolutely no control over what quotes actually end up on the reddit, or get shown to you.
+[/r/Sh*tRimworldSays](https://t.ly/mW0u0) is a collection of the funniest (and often most gruesome) Rimworld quotes, *taken out of context*. I have absolutely no control over what quotes actually end up on the reddit, or get shown to you.
 
 ## Features
 
 
-Automatically downloads the latest and greatest quotes from [/r/ShitRimworldSays](https://reddit.com/r/ShitRimworldSays), and displays them on loading screens.
+Automatically downloads the latest and greatest quotes from [/r/Sh*tRimworldSays](https://t.ly/mW0u0), and displays them on loading screens.
 
 Includes an option to disable the gameplay tips that are usually shown.
 
@@ -64,4 +64,4 @@ Parts of the code in this mod, and some of the content may be licensed by their 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: loading screens,  quotes
+[![Image](https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3374039039) | tags: loading screens,  quotes

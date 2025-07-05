@@ -5,7 +5,7 @@ namespace ShitRimWorldSays;
 
 public class Tip_Gameplay : Tip
 {
-    public string tip;
+    private string tip;
 
     public static implicit operator Tip_Gameplay(string tip)
     {

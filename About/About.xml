@@ -10,6 +10,7 @@
     <li>1.3</li>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -37,17 +38,17 @@ Update of Fluffys mod https://steamcommunity.com/sharedfiles/filedetails/?id=206
 [/table]
 	
 [img]https://i.imgur.com/Z4GOv8H.png[/img]
-adds quotes from /r/ShitRimWorldSays to RimWorld loading screens
+adds quotes from /r/Sh*tRimWorldSays to RimWorld loading screens
 
 [h2]Important[/h2]
 
 If you're easily offended, please do not install this mod.
 
-[url=https://reddit.com/r/ShitRimworldSays]/r/ShitRimworldSays[/url] is a collection of the funniest (and often most gruesome) Rimworld quotes, [i]taken out of context[/i]. I have absolutely no control over what quotes actually end up on the reddit, or get shown to you.
+[url=https://t.ly/mW0u0]/r/Sh*tRimworldSays[/url] is a collection of the funniest (and often most gruesome) Rimworld quotes, [i]taken out of context[/i]. I have absolutely no control over what quotes actually end up on the reddit, or get shown to you.
 
 [h2]Features[/h2]
 
-Automatically downloads the latest and greatest quotes from [url=https://reddit.com/r/ShitRimworldSays]/r/ShitRimworldSays[/url], and displays them on loading screens.
+Automatically downloads the latest and greatest quotes from [url=https://t.ly/mW0u0]/r/Sh*tRimworldSays[/url], and displays them on loading screens.
 
 Includes an option to disable the gameplay tips that are usually shown.
 
@@ -84,6 +85,6 @@ Parts of the code in this mod, and some of the content may be licensed by their 
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/][img]https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: loading screens,  quotes</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3374039039][img]https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: loading screens,  quotes</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>

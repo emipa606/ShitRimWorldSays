@@ -6,11 +6,11 @@ namespace ShitRimWorldSays;
 
 public class Tip_Quote : Tip, IExposable, IEquatable<Tip_Quote>
 {
-    public string author;
+    private string author;
 
     public string body;
 
-    public string permalink;
+    private string permalink;
 
     public int score;
 

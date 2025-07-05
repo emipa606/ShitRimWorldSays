@@ -19,7 +19,7 @@ public class ShitRimWorldSays : Mod
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
-    public static ShitRimWorldSays Instance { get; protected set; }
+    private static ShitRimWorldSays Instance { get; set; }
 
     public static Settings Settings => Instance.GetSettings<Settings>();
 

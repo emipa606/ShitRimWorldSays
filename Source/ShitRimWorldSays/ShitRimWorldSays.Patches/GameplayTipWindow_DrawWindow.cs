@@ -7,7 +7,7 @@ namespace ShitRimWorldSays.Patches;
 [HarmonyPatch(typeof(GameplayTipWindow), nameof(GameplayTipWindow.DrawWindow))]
 public static class GameplayTipWindow_DrawWindow
 {
-    public static readonly int WindowWidth = 776;
+    private static readonly int WindowWidth = 776;
 
     public static Vector2 bottomLeft;
 

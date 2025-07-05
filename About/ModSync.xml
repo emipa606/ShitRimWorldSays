@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>883da148-01f0-45b9-975d-a7ecfe5d524b</ID>
   <ModName>Shit Rimworld Says (Continued)</ModName>
-  <Version>1.5.1</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,8 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-
 

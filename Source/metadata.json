@@ -2,10 +2,16 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
   "SearchTags": [
     "loading screens",
     " quotes"
-  ]
+  ],
+  "LastXmlCleaning": "2025-07-05T15:16:46.4643602+02:00",
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 18985.0,
+  "LinesOfXML": 0
 }

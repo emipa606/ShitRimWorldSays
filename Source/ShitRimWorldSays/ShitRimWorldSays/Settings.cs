@@ -6,7 +6,7 @@ namespace ShitRimWorldSays;
 public class Settings : ModSettings
 {
     private string _minimumKarmaBuffer;
-    public TipDatabase database = new TipDatabase();
+    public TipDatabase database = new();
 
     public int minimumKarma = 150;
 
@@ -25,20 +25,20 @@ public class Settings : ModSettings
 
     public void DoWindowContents(Rect canvas)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(canvas);
-        listing_Standard.CheckboxLabeled(I18n.ReplaceGameTips, ref replaceGameTips, I18n.ReplaceGameTipsTooltip);
-        listing_Standard.CheckboxLabeled(I18n.TipsOnMainMenu, ref tipsOnMainMenu, I18n.TipsOnMainMenuTooltip);
-        listing_Standard.TextFieldNumericLabeled(I18n.MinimumKarma, ref minimumKarma, ref _minimumKarmaBuffer, 0f,
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(canvas);
+        listingStandard.CheckboxLabeled(I18n.ReplaceGameTips, ref replaceGameTips, I18n.ReplaceGameTipsTooltip);
+        listingStandard.CheckboxLabeled(I18n.TipsOnMainMenu, ref tipsOnMainMenu, I18n.TipsOnMainMenuTooltip);
+        listingStandard.TextFieldNumericLabeled(I18n.MinimumKarma, ref minimumKarma, ref _minimumKarmaBuffer, 0f,
             999f);
         if (ShitRimWorldSays.currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("Fluffy.ShitRimWorldSays.CurrentVersion".Translate(ShitRimWorldSays.currentVersion));
+            listingStandard.Label("Fluffy.ShitRimWorldSays.CurrentVersion".Translate(ShitRimWorldSays.currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 }

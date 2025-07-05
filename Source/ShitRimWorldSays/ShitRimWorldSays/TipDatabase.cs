@@ -22,22 +22,16 @@ public class TipDatabase : IExposable
 
     private static float _lastUpdateTime;
 
-    public static List<Tip> Tips
+    private static List<Tip> Tips
     {
         get
         {
-            if (_vanilla == null)
-            {
-                _vanilla = DefDatabase<TipSetDef>.AllDefsListForReading.SelectMany(set => set.tips)
-                    .Select((Func<string, Tip_Gameplay>)(tip => tip)).ToList();
-            }
+            _vanilla ??= DefDatabase<TipSetDef>.AllDefsListForReading.SelectMany(set => set.tips)
+                .Select((Func<string, Tip_Gameplay>)(tip => tip)).ToList();
 
             if (ShitRimWorldSays.Settings.replaceGameTips)
             {
-                if (_tips == null)
-                {
-                    _tips = ((IEnumerable<Tip>)_quotes.InRandomOrder()).ToList();
-                }
+                _tips ??= ((IEnumerable<Tip>)_quotes.InRandomOrder()).ToList();
             }
             else if (_tips == null)
             {

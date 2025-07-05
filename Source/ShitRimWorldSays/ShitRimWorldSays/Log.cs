@@ -4,7 +4,7 @@ namespace ShitRimWorldSays;
 
 internal static class Log
 {
-    public static void Message(string msg)
+    private static void message(string msg)
     {
         Verse.Log.Message($"ShitRimWorldSays :: {msg}");
     }
@@ -12,6 +12,6 @@ internal static class Log
     [Conditional("DEBUG")]
     public static void Debug(string msg)
     {
-        Message(msg);
+        message(msg);
     }
 }

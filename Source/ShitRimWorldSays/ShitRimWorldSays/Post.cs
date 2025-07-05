@@ -10,7 +10,7 @@ namespace ShitRimWorldSays;
 public class Post
 {
     private static readonly Regex urlRegex =
-        new Regex("reddit\\.com\\/r\\/(?<sub>\\w+)\\/comments\\/(?<post>(\\w|\\d)+)\\/.+?\\/(?<reply>(\\w|\\d)+)?");
+        new("reddit\\.com\\/r\\/(?<sub>\\w+)\\/comments\\/(?<post>(\\w|\\d)+)\\/.+?\\/(?<reply>(\\w|\\d)+)?");
 
     public string title { get; set; }
 
@@ -61,8 +61,8 @@ public class Post
             http.Headers.Add("user-agent", "shit-rimworld-says rimworld mod v0.1");
             var reply = JsonConvert.DeserializeObject<Reply>(
                 JObject.Parse(await http.DownloadStringTaskAsync(address))["data"]["children"][0]["data"].ToString());
-            var tip_Quote = new Tip_Quote(reply.author, reply.body, reply.permalink, score);
-            return tip_Quote.body == "[deleted]" ? null : tip_Quote;
+            var tipQuote = new Tip_Quote(reply.author, reply.body, reply.permalink, score);
+            return tipQuote.body == "[deleted]" ? null : tipQuote;
         }
         catch (Exception)
         {
@@ -79,9 +79,9 @@ public class Post
             http.Headers.Add("user-agent", "shit-rimworld-says rimworld mod v0.1");
             var post = JsonConvert.DeserializeObject<Post>(
                 JObject.Parse(await http.DownloadStringTaskAsync(address))["data"]["children"][0]["data"].ToString());
-            var tip_Quote = new Tip_Quote(post.author, post.is_self ? post.selftext : post.title, post.permalink,
+            var tipQuote = new Tip_Quote(post.author, post.is_self ? post.selftext : post.title, post.permalink,
                 score);
-            return tip_Quote.body == "[deleted]" ? null : tip_Quote;
+            return tipQuote.body == "[deleted]" ? null : tipQuote;
         }
         catch (Exception)
         {
