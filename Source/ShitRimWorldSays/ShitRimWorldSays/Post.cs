@@ -62,7 +62,7 @@ public class Post
             var reply = JsonConvert.DeserializeObject<Reply>(
                 JObject.Parse(await http.DownloadStringTaskAsync(address))["data"]["children"][0]["data"].ToString());
             var tipQuote = new Tip_Quote(reply.author, reply.body, reply.permalink, score);
-            return tipQuote.body == "[deleted]" ? null : tipQuote;
+            return (tipQuote.body == "[removed]" || tipQuote.body == "[deleted]") ? null : tipQuote;
         }
         catch (Exception)
         {
@@ -81,7 +81,7 @@ public class Post
                 JObject.Parse(await http.DownloadStringTaskAsync(address))["data"]["children"][0]["data"].ToString());
             var tipQuote = new Tip_Quote(post.author, post.is_self ? post.selftext : post.title, post.permalink,
                 score);
-            return tipQuote.body == "[deleted]" ? null : tipQuote;
+            return (tipQuote.body == "[removed]" || tipQuote.body == "[deleted]") ? null : tipQuote;
         }
         catch (Exception)
         {
