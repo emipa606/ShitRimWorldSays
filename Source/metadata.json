@@ -8,10 +8,11 @@
     "loading screens",
     " quotes"
   ],
-  "LastXmlCleaning": "2025-07-05T15:16:46.4643602+02:00",
+  "LastXmlCleaning": "2025-08-31T20:24:08.1841288+02:00",
   "Patches": false,
   "Defs": false,
   "Assemblies": true,
-  "LinesOfCode": 18985.0,
-  "LinesOfXML": 0
+  "LinesOfCode": 19015,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 67
 }
