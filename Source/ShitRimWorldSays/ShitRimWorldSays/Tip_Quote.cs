@@ -44,11 +44,6 @@ public class Tip_Quote : Tip, IExposable, IEquatable<Tip_Quote>
         Scribe_Values.Look(ref score, "score");
     }
 
-    public static implicit operator Tip_Quote((string, string, string, int) tuple)
-    {
-        return new Tip_Quote(tuple.Item1, tuple.Item2, tuple.Item3, tuple.Item4);
-    }
-
     public override bool Equals(object obj)
     {
         if (obj == null)
@@ -62,6 +57,11 @@ public class Tip_Quote : Tip, IExposable, IEquatable<Tip_Quote>
         }
 
         return obj.GetType() == GetType() && Equals((Tip_Quote)obj);
+    }
+
+    public static implicit operator Tip_Quote((string, string, string, int) tuple)
+    {
+        return new Tip_Quote(tuple.Item1, tuple.Item2, tuple.Item3, tuple.Item4);
     }
 
     public override int GetHashCode()

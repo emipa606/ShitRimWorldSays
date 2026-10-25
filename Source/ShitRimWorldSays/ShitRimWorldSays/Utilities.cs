@@ -4,14 +4,17 @@ namespace ShitRimWorldSays;
 
 public static class Utilities
 {
-    public static Rect ContractedBy(this Rect rect, Vector2 margin)
+    extension(Rect rect)
     {
-        return new Rect(rect.min + margin, rect.size - (2f * margin));
-    }
+        public Rect ContractedBy(Vector2 margin)
+        {
+            return new Rect(rect.min + margin, rect.size - (2f * margin));
+        }
 
-    public static Vector2 BottomLeft(this Rect rect)
-    {
-        return new Vector2(rect.xMin, rect.yMax);
+        public Vector2 BottomLeft()
+        {
+            return new Vector2(rect.xMin, rect.yMax);
+        }
     }
 
     public static string Italic(this string msg)

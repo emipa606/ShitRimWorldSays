@@ -2,7 +2,7 @@ using Verse;
 
 namespace ShitRimWorldSays;
 
-public class I18n
+public static class I18n
 {
     public static readonly string ShitRimWorldSays = translate("ShitRimWorldSays");
 

@@ -6,7 +6,7 @@ using Verse;
 namespace ShitRimWorldSays.Patches;
 
 [HarmonyPatch(typeof(MainMenuDrawer), nameof(MainMenuDrawer.MainMenuOnGUI))]
-public class MainMenuDrawer_MainMenuOnGui
+public static class MainMenuDrawer_MainMenuOnGui
 {
     public static void Postfix()
     {

@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using UnityEngine;
 using Verse;
 
@@ -86,20 +85,26 @@ public class TipDatabase : IExposable
         }
     }
 
-    public static async void FetchNewQuotes()
+    public static async Task FetchNewQuotes()
     {
         try
         {
-            using var http = new WebClient();
-            http.Headers.Add("user-agent", "shit-rimworld-says rimworld mod v0.1");
-            var list = (await Task.WhenAll(
-                from postJson in JObject.Parse(
-                        await http.DownloadStringTaskAsync("https://reddit.com/r/ShitRimworldSays/hot/.json?limit=100"))
-                    ["data"]["children"]
-                select JsonConvert.DeserializeObject<Post>(postJson["data"].ToString())
-                into p
-                where p.score >= ShitRimWorldSays.Settings.minimumKarma
-                select p.getQuote())).Where(q => q != null).ToList();
+            using var http = new HttpClient();
+            http.DefaultRequestHeaders.UserAgent.ParseAdd("shit-rimworld-says rimworld mod v0.1");
+            using var document = JsonDocument.Parse(await http.GetStringAsync(
+                "https://reddit.com/r/ShitRimworldSays/hot/.json?limit=100"));
+            var posts = new List<Post>();
+            foreach (var child in document.RootElement.GetProperty("data").GetProperty("children").EnumerateArray())
+            {
+                var post = child.GetProperty("data").Deserialize<Post>();
+                if (post != null && post.score >= ShitRimWorldSays.Settings.minimumKarma)
+                {
+                    posts.Add(post);
+                }
+            }
+
+            var list = (await Task.WhenAll(posts.Select(post => post.getQuote())))
+                .Where(quote => quote != null).ToList();
             _quotes.AddRange(list);
             ShitRimWorldSays.Settings.database = new TipDatabase();
             ShitRimWorldSays.Settings.Write();

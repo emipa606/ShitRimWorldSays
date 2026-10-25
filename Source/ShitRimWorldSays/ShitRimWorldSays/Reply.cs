@@ -2,9 +2,9 @@ namespace ShitRimWorldSays;
 
 public class Reply
 {
-    public string permalink { get; set; }
+    public string permalink { get; init; }
 
-    public string author { get; set; }
+    public string author { get; init; }
 
-    public string body { get; set; }
+    public string body { get; init; }
 }

@@ -1,12 +1,12 @@
 # [Shit Rimworld Says (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3374039039)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Fluffys mod https://steamcommunity.com/sharedfiles/filedetails/?id=2069706266
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 adds quotes from /r/Sh*tRimWorldSays to RimWorld loading screens
 
@@ -50,13 +50,13 @@ All original content (e.g. text, imagery, sounds) in this mod is licensed under 
 
 Parts of the code in this mod, and some of the content may be licensed by their original authors. If this is the case, the original author and license will either be given in the source code, or be in a LICENSE file next to the content. Please do not decompile my mods, but use the original source code available on [GitHub](https://github.com/fluffy-mods/ShitRimWorldSays/), so license information in the source code is preserved.
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -64,4 +64,4 @@ Parts of the code in this mod, and some of the content may be licensed by their 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3374039039) | tags: loading screens,  quotes
+[![Image](https://img.shields.io/github/v/release/emipa606/ShitRimworldSays?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3374039039) | loading screens, quotes

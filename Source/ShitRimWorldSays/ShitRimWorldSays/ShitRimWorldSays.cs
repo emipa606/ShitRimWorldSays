@@ -14,7 +14,7 @@ public class ShitRimWorldSays : Mod
     {
         Instance = this;
         GetSettings<Settings>();
-        TipDatabase.FetchNewQuotes();
+        _ = TipDatabase.FetchNewQuotes();
         new Harmony("Fluffy.ShitRimWorldSays").PatchAll();
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
@@ -28,9 +28,9 @@ public class ShitRimWorldSays : Mod
         return I18n.ShitRimWorldSays;
     }
 
-    public override void DoSettingsWindowContents(Rect canvas)
+    public override void DoSettingsWindowContents(Rect inRect)
     {
-        Settings.DoWindowContents(canvas);
+        Settings.DoWindowContents(inRect);
     }
 
     public override void WriteSettings()
